@@ -1,0 +1,125 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>110</x><y>90</y><w>100</w><h>30</h></coordinates><panel_attributes>Normal User</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>180</y><w>100</w><h>30</h></coordinates><panel_attributes>Handy Plattform</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>230</y><w>100</w><h>30</h></coordinates><panel_attributes>Laptop Plattform</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>280</y><w>100</w><h>30</h></coordinates><panel_attributes>Desktop Plattform</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>60</y><w>100</w><h>30</h></coordinates><panel_attributes>Admin User</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>110</y><w>120</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>100;180;10;180;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>139</x><y>230</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>139</x><y>180</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>120</y><w>210</w><h>190</h></coordinates><panel_attributes>Mainpage
+HTML Dokument formiert mit CSS
+User Interface und Info Übersicht
+--
+Navigatons Leiste
+Hauptseite - Saal 1/3 - Kontakte 
+--
+Welche Filme sind zu sehen
+In welchen Säälen sind sie zu findn
+--
+Film Informationen
+Kurzbeschreibung
+--
+Sonstiges
+Informationen zum Essen
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>110</y><w>130</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;60;10;60;180;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>110</y><w>130</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;60;10;60;130;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>110</y><w>130</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;60;10;60;80;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>140</y><w>210</w><h>130</h></coordinates><panel_attributes>JS für Reservationen
+{innerclass
+Funktion zur Datenerfassung
+innerclass}
+{innerclass
+Grafischer GUI
+{innerclass
+Sitzplatz wählen
+--
+Kann per Mouse Klick 
+innerclass}
+innerclass}
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>60</y><w>100</w><h>30</h></coordinates><panel_attributes>Änderungen</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>60</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>50</y><w>230</w><h>50</h></coordinates><panel_attributes>lt=)-
+m1=require
+</panel_attributes><additional_attributes>20;20;210;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>60</y><w>100</w><h>30</h></coordinates><panel_attributes>Admin Rechte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>80</y><w>100</w><h>60</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;40;10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>80</y><w>130</w><h>80</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;60;10;30;110;30;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>270</y><w>210</w><h>130</h></coordinates><panel_attributes>JS für Tamplet
+{innerclass
+Funktion zur Info beschafung
+innerclass}
+{innerclass
+Grafischer GUI
+{innerclass
+Formation der Stühle
+--
+Aus der Homepage die Daten
+innerclass}
+innerclass}
+--
+Navigation mit einbauen!
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>450</y><w>210</w><h>230</h></coordinates><panel_attributes>Saal 1
+HTML Dokument formiert mit CSS
+Funktionen basierend auf JS
+--
+Navigatons Leiste
+Hauptseite - Saal 1/3 - Kontakte 
+--
+Informationen zum Film
+{innerclass
+Aus der Mainpage geholt
+innerclass}
+--
+Film Informationen
+Kurzbeschreibung
+--
+Warenkorb (Wenn Zeit bleibt)
+--
+Sonstiges
+-Info zu den Sitzplätzen
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>450</y><w>210</w><h>230</h></coordinates><panel_attributes>Saal 2
+HTML Dokument formiert mit CSS
+Funktionen basierend auf JS
+--
+Navigatons Leiste
+Hauptseite - Saal 1/3 - Kontakte 
+--
+Informationen zum Film
+{innerclass
+Aus der Mainpage geholt
+innerclass}
+--
+Film Informationen
+Kurzbeschreibung
+--
+Warenkorb (Wenn Zeit bleibt)
+--
+Sonstiges
+-Info zu den Sitzplätzen
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>450</y><w>210</w><h>230</h></coordinates><panel_attributes>Saal 3
+HTML Dokument formiert mit CSS
+Funktionen basierend auf JS
+--
+Navigatons Leiste
+Hauptseite - Saal 1/3 - Kontakte 
+--
+Informationen zum Film
+{innerclass
+Aus der Mainpage geholt
+innerclass}
+--
+Film Informationen
+Kurzbeschreibung
+--
+Warenkorb (Wenn Zeit bleibt)
+--
+Sonstiges
+-Info zu den Sitzplätzen
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>300</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>400</y><w>280</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;50;10;10;260;10</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>400</y><w>260</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>240;50;240;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>80</y><w>120</w><h>390</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;370;10;310;100;310;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>380</y><w>280</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;70;10;10;260;10</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>380</y><w>170</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>150;70;150;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>300</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>360</y><w>280</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;90;10;10;260;10</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>360</y><w>260</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>240;90;240;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>140</y><w>210</w><h>70</h></coordinates><panel_attributes>JS für Komunikation
+{innerclass
+Info und daten weitergeben
+innerclass}
+{innerclass
+Kein Grafischer GUI
+innerclass}
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>210</y><w>210</w><h>70</h></coordinates><panel_attributes>JS für Komunikation
+{innerclass
+Info und daten weitergeben
+innerclass}
+{innerclass
+Kein Grafischer GUI
+innerclass}
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>270</y><w>220</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;60;200;60;200;10</additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>70</y><w>130</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;50;10;10;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>60</y><w>100</w><h>30</h></coordinates><panel_attributes>Informatiker</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>100</y><w>140</w><h>60</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>120;40;120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>60</y><w>150</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element></diagram>

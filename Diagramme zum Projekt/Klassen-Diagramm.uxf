@@ -1,0 +1,67 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>466</x><y>26</y><w>100</w><h>30</h></coordinates><panel_attributes>main.html</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>66</x><y>26</y><w>110</w><h>30</h></coordinates><panel_attributes>Reservation.JS</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>156</x><y>76</y><w>280</w><h>190</h></coordinates><panel_attributes>Klasse Reservation
+Information beschafung
+--
+Variabeln:
+ID, Reservation, UserName, UserPrice, Place
+--
+#Operation(i: int):
+Information Abfrage
+Information Speichern
+Sitzplatz bestätigen
+--
+Rückgabe:
+- Jason Datei
+- Platz Informationen</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>156</x><y>276</y><w>280</w><h>190</h></coordinates><panel_attributes>Klasse Tamplet
+Grafische Übersichten Displayen
+--
+Variabeln:
+ID, Place, Img, Position, row, col
+--
+#Operation(i: int):
+-Grafische Display Anzeige
+-Vergabe der Sitze bestimmen
+-Informationen zum Saal ausgeben
+--
+Rückgabe:
+- Informationen zur Situation
+- Allgemeine Angaben zum Raum</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>156</x><y>476</y><w>280</w><h>210</h></coordinates><panel_attributes>Klasse Auswahl
+Grafische Übersichten Displayen
+--
+Variabeln:
+ID, Place, Img, Position, row, col, UserName, 
+UserPrice
+--
+#Operation(i: int):
+-Grafische Display Anzeige
+-Vergabe der Sitze bestimmen
+-Informationen zum Saal ausgeben
+--
+Rückgabe:
+- Informationen zur Situation
+- Allgemeine Angaben zum Raum</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>64</x><y>46</y><w>110</w><h>450</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;430;10;430;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>60</x><y>286</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>62</x><y>86</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>536</x><y>76</y><w>280</w><h>190</h></coordinates><panel_attributes>HTML Hauptseite
+Informationen zur Seite
+--
+Variabeln:
+ID, Reservation, UserName, UserPrice, Place
+--
+#Operation(i: int):
+Information Abfrage
+Information Speichern
+Sitzplatz bestätigen
+--
+Rückgabe:
+- Jason Datei
+- Platz Informationen</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>536</x><y>396</y><w>280</w><h>190</h></coordinates><panel_attributes>Klasse Reservation
+Information beschafung
+--
+Variabeln:
+ID, Reservation, UserName, UserPrice, Place
+--
+#Operation(i: int):
+Information Abfrage
+Information Speichern
+Sitzplatz bestätigen
+--
+Rückgabe:
+- Jason Datei
+- Platz Informationen</panel_attributes><additional_attributes></additional_attributes></element></diagram>
