@@ -376,7 +376,7 @@
             </div>
             <div class="u-form-group u-form-name u-form-partition-factor-2 u-form-group-2">
               <label for="name-f2a8" class="u-label u-text-palette-3-light-2 u-label-2">Name</label>
-              <input type="text" id="name-f2a8" name="name" class="u-input u-input-rectangle u-palette-3-light-2" required="">
+              <input type="text" id="name-f2a8" name="name" placeholder="Name + Nachname" class="u-input u-input-rectangle u-palette-3-light-2" required="">
             </div>
             <div class="u-form-email u-form-group u-form-partition-factor-2 u-form-group-3">
               <label for="email-f2a8" class="u-label u-text-palette-3-light-2 u-label-3">E-mail</label>
@@ -392,8 +392,24 @@
             </div>
             <div class="u-align-left u-form-group u-form-submit u-form-group-6">
               <a href="#" class="u-border-2 u-border-palette-3-light-2 u-btn u-btn-rectangle u-btn-submit u-button-style u-none u-btn-1">Submit</a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
+              <input type="submit" value="submit" class="u-form-control-hidden" id="submitReservation">
             </div>
+              <?php 
+                $bday = $_POST['date-4441'];
+                $nameU = $_POST['name-f2a8'];
+                $email = $_POST['email-f2a8'];
+                $telU = $_POST['phone-447e'];
+                $resS = $_POST['text-936e'];
+
+                $empfaenger = "mmiggiano@me.com";
+                $betreff = "Reservation für Saal 3";
+                $from = "From: $nameU <$email>";
+                $kontakt = "$bday, $telU";
+                $text = "Ich Reserviere den Platz $resS";
+
+                
+                mail($empfaenger, $betreff, $from, $kontakt, $text);
+              ?>
             <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
             <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
             <input type="hidden" value="" name="recaptchaResponse">
