@@ -372,27 +372,27 @@
           <form action="#" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0;" source="custom" name="form">
             <div class="u-form-group u-form-group-1">
               <label for="text-936e" class="u-label u-text-palette-3-light-2 u-label-1">Sitzplatz</label>
-              <input type="text" placeholder="Reihe+Nummer" id="text-936e" name="text" class="u-input u-input-rectangle u-palette-3-light-2">
+              <input type="text" method="POST" placeholder="Reihe+Nummer" id="text-936e" name="text" class="u-input u-input-rectangle u-palette-3-light-2">
             </div>
             <div class="u-form-group u-form-name u-form-partition-factor-2 u-form-group-2">
               <label for="name-f2a8" class="u-label u-text-palette-3-light-2 u-label-2">Name</label>
-              <input type="text" id="name-f2a8" name="name" placeholder="Name + Nachname" class="u-input u-input-rectangle u-palette-3-light-2" required="">
+              <input type="text" method="POST" id="name-f2a8" name="name" placeholder="Name + Nachname" class="u-input u-input-rectangle u-palette-3-light-2" required="">
             </div>
             <div class="u-form-email u-form-group u-form-partition-factor-2 u-form-group-3">
               <label for="email-f2a8" class="u-label u-text-palette-3-light-2 u-label-3">E-mail</label>
-              <input type="email" placeholder="" id="email-f2a8" name="email" class="u-input u-input-rectangle u-palette-3-light-2" required="">
+              <input type="email" method="POST" placeholder="" id="email-f2a8" name="email" class="u-input u-input-rectangle u-palette-3-light-2" required="">
             </div>
             <div class="u-form-date u-form-group u-form-partition-factor-2 u-form-group-4">
               <label for="date-4441" class="u-label u-text-palette-3-light-2 u-label-4">Date</label>
-              <input type="date" placeholder="MM/DD/YYYY" id="date-4441" name="date" class="u-input u-input-rectangle u-palette-3-light-2" required="">
+              <input type="date" placeholder="MM/DD/YYYY" method="POST" id="date-4441" name="date" class="u-input u-input-rectangle u-palette-3-light-2" required="">
             </div>
             <div class="u-form-group u-form-partition-factor-2 u-form-phone u-form-group-5">
               <label for="phone-447e" class="u-label u-text-palette-3-light-2 u-label-5">Phone (Nicht Pflicht)</label>
-              <input type="tel" pattern="\+?\d{0,2}[\s\(\-]?([0-9]{3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Enter your phone (e.g. +41155552675)" id="phone-447e" name="phone" class="u-input u-input-rectangle u-palette-3-light-2" required="">
+              <input type="tel" method="POST" pattern="\+?\d{0,2}[\s\(\-]?([0-9]{3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Enter your phone (e.g. +41155552675)" id="phone-447e" name="phone" class="u-input u-input-rectangle u-palette-3-light-2" required="">
             </div>
             <div class="u-align-left u-form-group u-form-submit u-form-group-6">
               <a href="#" class="u-border-2 u-border-palette-3-light-2 u-btn u-btn-rectangle u-btn-submit u-button-style u-none u-btn-1">Submit</a>
-              <input type="submit" value="submit" class="u-form-control-hidden" id="submitReservation" name="submit">
+              <input type="submit" value="submit" class="u-form-control-hidden" id="submitReservation" name="submit" method="POST">
             </div>
             <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
             <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
@@ -422,6 +422,7 @@
   </body>
 </html>
 <?php 
+  var_dump($_POST['submit']);
   if (isset($_POST['submit'])){
     $bday = $_POST['date'];
     $nameU = $_POST['name'];
