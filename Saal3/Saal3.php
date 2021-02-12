@@ -170,7 +170,7 @@
             </div>
           </div>
         </div>
-        <h3 class="u-text u-text-3">D</h3>
+        <h3 class="u-text u-text-3">C</h3>
         <div class="u-clearfix u-expanded-width u-gutter-20 u-layout-wrap u-layout-wrap-3">
           <div class="u-layout">
             <div class="u-layout-col">
@@ -241,7 +241,7 @@
         <h3 class="u-align-center u-text u-text-11">8</h3>
         <h3 class="u-align-center u-text u-text-12">9</h3>
         <h3 class="u-align-center u-text u-text-13">10</h3>
-        <h3 class="u-text u-text-14">C</h3>
+        <h3 class="u-text u-text-14">D</h3>
         <div class="u-clearfix u-expanded-width u-gutter-20 u-layout-wrap u-layout-wrap-4">
           <div class="u-layout">
             <div class="u-layout-col">
@@ -423,18 +423,18 @@
 </html>
 <?php 
   if (isset($_POST['submit'])){
-  $bday = $_POST['date'];
-  $nameU = $_POST['name'];
-  $email = $_POST['email'];
-  $telU = $_POST['phone'];
-  $resS = $_POST['text'];
+    $bday = $_POST['date'];
+    $nameU = $_POST['name'];
+    $email = $_POST['email'];
+    $telU = $_POST['phone'];
+    $resS = $_POST['text'];
 
-  $empfaenger = "mmiggiano@me.com";
-  $betreff = "Reservation für Saal 3";
-  $from = "From: $nameU <$email>";
-  $kontakt = "$bday, $telU";
-  $text = "Ich Reserviere den Platz $resS";
+    $empfaenger = "mmiggiano@me.com";
+    $betreff = "Reservation für Saal 3";
+    $from = "From: $nameU <$email>";
+    $kontakt = "$bday, $telU";
+    $reservation = "Ich Reserviere den Platz $resS";
 
-  mail($empfaenger, $betreff, $from, $kontakt, $text);
-  }
+    mail($empfaenger, $betreff, $from, $kontakt, $reservation);
+  };
 ?>
