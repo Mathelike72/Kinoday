@@ -392,24 +392,8 @@
             </div>
             <div class="u-align-left u-form-group u-form-submit u-form-group-6">
               <a href="#" class="u-border-2 u-border-palette-3-light-2 u-btn u-btn-rectangle u-btn-submit u-button-style u-none u-btn-1">Submit</a>
-              <input type="submit" value="submit" class="u-form-control-hidden" id="submitReservation">
+              <input type="submit" value="submit" class="u-form-control-hidden" id="submitReservation" name="submit">
             </div>
-              <?php 
-                $bday = $_POST['date-4441'];
-                $nameU = $_POST['name-f2a8'];
-                $email = $_POST['email-f2a8'];
-                $telU = $_POST['phone-447e'];
-                $resS = $_POST['text-936e'];
-
-                $empfaenger = "mmiggiano@me.com";
-                $betreff = "Reservation für Saal 3";
-                $from = "From: $nameU <$email>";
-                $kontakt = "$bday, $telU";
-                $text = "Ich Reserviere den Platz $resS";
-
-                
-                mail($empfaenger, $betreff, $from, $kontakt, $text);
-              ?>
             <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
             <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
             <input type="hidden" value="" name="recaptchaResponse">
@@ -437,3 +421,20 @@
     </section>
   </body>
 </html>
+<?php 
+  if (isset($_POST['submit'])){
+  $bday = $_POST['date'];
+  $nameU = $_POST['name'];
+  $email = $_POST['email'];
+  $telU = $_POST['phone'];
+  $resS = $_POST['text'];
+
+  $empfaenger = "mmiggiano@me.com";
+  $betreff = "Reservation für Saal 3";
+  $from = "From: $nameU <$email>";
+  $kontakt = "$bday, $telU";
+  $text = "Ich Reserviere den Platz $resS";
+
+  mail($empfaenger, $betreff, $from, $kontakt, $text);
+  }
+?>
